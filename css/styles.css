@@ -1,0 +1,194 @@
+h1 {
+    color: rgb(139, 57, 98);
+}
+
+p,li,label{
+    color: rgba(161, 59, 148, 0.829);
+}
+
+h2,span{
+    color: rgb(139, 57, 98);
+}
+
+html {
+    background-color: black;
+  }
+
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+
+  body {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #aba4d6f3;
+    padding: 0 50px 2900px 50px;
+    border: 5px solid whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer{
+    font-size: 10px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+#container{
+  width: 70%;
+  width: 1100px;
+  margin: 0px auto;
+  border: 5px solid;
+}
+
+header{
+  background-color: lavenderblush;
+  height: 100px;
+  width: 80%;
+  text-align: center;
+  line-height: 100px;
+  padding: 0 100px 0px 140px
+}
+
+nav ul li{
+  float: left;
+  list-style: none;
+  margin: 10px;
+  line-height: 30px;
+}
+
+nav{
+  background-color: lavenderblush;
+  height: 50px;
+}
+
+.clearfix{
+  clear: both;
+}
+
+#contenido{
+  float: left;
+  width: 1200px;
+  background-color: #d4cefcf3;
+  padding: 0 0px 30px 0px;
+  min-height: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+aside{
+  float: left;
+  width: calc(20% - 20px);
+  background-color: lavenderblush;
+  min-height: 500px;
+  padding: 10px;
+  margin: auto;
+}
+-- Aca verificar si queda bien la barra lateral --
+
+.article{
+  color: rgb(255, 255, 255);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+
+#direccion{
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  color: rgb(146, 86, 116)
+}
+
+#contenidooo{
+  justify-content: center;
+  float: left;
+  background-color: #d4cefcf3;
+}
+
+-- Eliminar si contenidooo no se usa --
+
+ol{
+  list-style-type: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: rgb(139, 57, 98);
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.flex-container div{
+  background-color: #d4cefcf3;
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+@media (min-width: 541px) and (max-width: 720px){
+  .article{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1.5fr 0.75fr 0.75fr 0.75fr; 
+      grid-template-areas: "foto screen"}
+  .portada{
+      height: 70vh;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 540px){
+  header {
+      flex-direction: column;
+  }
+  .flex-container{
+      flex-direction: column;
+  }
+  .article {
+      grid-template-columns: 1fr ;
+      grid-template-rows: auto; 
+      grid-template-areas: "foto screen"
+  }
+  footer{
+      flex-direction: column;
+  }
+}
+
+.footer__redes {
+  width: 50px;
+  height: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 0.75fr 0.75fr 0.75fr; 
+  grid-template-areas: "portada portada portada portada"
+                      "imagen__destacada imagen__destacada resumen resumen"
+                      "form form newsletter__titulo newsletter__titulo"
+                      "card__uno card__dos card__tres card__cuatro";
+  justify-content: center;
+  align-items: center;
+}
