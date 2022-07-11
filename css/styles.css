@@ -48,7 +48,7 @@ html {
   }
 
 #container{
-  width: 70%;
+  width: 80%;
   width: 1100px;
   margin: 0px auto;
   border: 5px solid;
@@ -80,10 +80,10 @@ nav{
 }
 
 #contenido{
-  float: left;
-  width: 1200px;
+  float: center;
+  width: 1090px;
   background-color: #d4cefcf3;
-  padding: 0 0px 30px 0px;
+  padding: 0 0px 30px 10px;
   min-height: 50px;
   text-align: center;
   justify-content: center;
@@ -148,3 +148,72 @@ ul{
   font-size: 20px;
   border: 2px solid black;
 }
+
+@media (min-width: 541px) and (max-width: 720px){
+  .article{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1.5fr 0.75fr 0.75fr 0.75fr; 
+      grid-template-areas: "foto screen"}
+  .portada{
+      height: 70vh;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 540px){
+  header {
+      flex-direction: column;
+  }
+  .flex-container{
+      flex-direction: column;
+  }
+  .article {
+      grid-template-columns: 1fr ;
+      grid-template-rows: auto; 
+      grid-template-areas: "foto screen"
+  }
+  footer{
+      flex-direction: column;
+  }
+}
+
+.footer__redes {
+  width: 50px;
+  height: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 0.75fr 0.75fr 0.75fr; 
+  grid-template-areas: "portada portada portada portada"
+                      "imagen__destacada imagen__destacada resumen resumen"
+                      "form form newsletter__titulo newsletter__titulo"
+                      "card__uno card__dos card__tres card__cuatro";
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 980px){
+  #contenedor{
+      width: 90%;
+  }
+  #contenido{
+      width: 60%;
+  }
+  #barra_lateral{
+      width:30%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  #encabezado{
+      height: auto;
+  }
+  #contenido{
+      width: auto;
+  }
+  #barra_lateral{
+      display:none;
+  }
+}
+
