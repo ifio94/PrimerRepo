@@ -78,6 +78,7 @@ function valorFinal (cantidadProducto){
     alert (`Debes abonar el valor total de $${cantidadProducto} `);
 }
 
+
 const contenedorProductos = document.getElementById('contenedor-productos')
 
 const contenedorCarrito = document.getElementById('carrito-contenedor')
@@ -204,4 +205,16 @@ contenedorModal.classList.toggle('modal-active')
 })
 modalCarrito.addEventListener('click', (event) => {
 event.stopPropagation()
+})
+
+
+const btn = document.querySelector('#myBtn')
+btn.addEventListener('click', () => {
+
+    Swal.fire({
+        title: 'Genial!',
+        text: 'Haz clickeado el botón!',
+        icon: 'success',
+        confirmButtonText: 'Cool'
+})
 })
