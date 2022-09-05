@@ -79,6 +79,8 @@ function valorFinal (cantidadProducto){
 }
 
 
+//carrito de compras con stock
+
 const contenedorProductos = document.getElementById('contenedor-productos')
 
 const contenedorCarrito = document.getElementById('carrito-contenedor')
